@@ -15,7 +15,7 @@ int main() {
 
 bool testPalindrome(string input, const int& place) {
 	if (place < input.length() / 2) {
-		if (input[place] == input[input.length() - place -1]) {
+		if (input[place] == input[input.length() - place - 1]) {
 			return testPalindrome(input, place + 1);
 		}
 		else return false;

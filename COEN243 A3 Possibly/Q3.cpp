@@ -153,7 +153,6 @@ void show(bool* grid, const unsigned int& size) {
 }
 
 void cancel(bool* grid, const unsigned int& steps, const unsigned int& size, vector<int>& history, vector<int>& replay) {
-	replay.clear();
 	for (int i = 0; i < steps; i++) {
 		int temp = history.back();
 		history.pop_back();
