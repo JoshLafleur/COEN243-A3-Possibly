@@ -79,7 +79,7 @@ int main() {
 				temp += input[i];
 			}
 		}
-		if (replayable = true) {
+		if (replayable == true) {
 			replayHold.clear();
 			replayable = false;
 		}
@@ -166,8 +166,8 @@ void replay(bool* grid, const unsigned int& steps, const unsigned int& size, vec
 	for (int i = 0; i < steps; i++) {
 		int temp = replay.back();
 		replay.pop_back();
-		if (temp < 0) left(grid, -temp, size, history);
-		else right(grid, temp, size, history);
+		if (temp > 0) left(grid, temp, size, history);
+		else right(grid, -temp, size, history);
 	}
 }
 
